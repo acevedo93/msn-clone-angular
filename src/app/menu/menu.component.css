@@ -1,0 +1,24 @@
+.menu-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  z-index: 9;
+  justify-content: flex-start;
+  align-items: center;
+  background-image : url('/assets/img/msnbg.jpg');
+  -webkit-box-shadow: 3px 11px 65px -21px rgba(48,43,48,0.69);
+-moz-box-shadow: 3px 11px 65px -21px rgba(48,43,48,0.69);
+box-shadow: 3px 11px 65px -21px rgba(48,43,48,0.69);
+}
+#main-logo {
+  width: 70px;
+  height: auto
+}
+ .menu-container > .item {
+  font-size: 2em;
+  margin-left: 10px;
+  color:white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

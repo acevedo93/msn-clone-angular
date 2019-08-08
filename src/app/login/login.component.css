@@ -1,0 +1,8 @@
+.login-container {
+
+}
+.msn-style {
+  border: 1px solid black;
+  background: rgb(255,255,255);
+  background: linear-gradient(9deg, rgba(255,255,255,1) 0%, rgba(155,155,155,1) 100%, rgba(220,220,220,1) 100%);
+}

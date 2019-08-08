@@ -1,0 +1,16 @@
+
+<div class=" home-container">
+  <input type="text" placeholder="Buscar Amigo" [(ngModel)]="query" />
+  <br/>
+  <b>Amigos</b>
+    <ng-container *ngFor="let user of usuarios | search: query; let i = index" >
+    <div class="user-container">
+      <a class="user-link" routerLink="/conversation/{{user.uid}}">
+        {{i}} - {{user.nick}} {{user.email}}
+      </a>
+      <img class="user-icon-status" *ngIf="user.status === 'online'" src="../../assets/img/logo_live_online.png" alt="online">
+      <img class="user-icon-status" *ngIf="user.status === 'offline'" src="../../assets/img/logo_live_offline.png" alt="offline">
+      <img class="user-icon-status" *ngIf="user.status === 'busy'" src="../../assets/img/logo_live_busy.png" alt="busy">
+    </div>
+  </ng-container>
+</div>

@@ -3,7 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig : {
+    apiKey: "AIzaSyDqBLhRab0eU6cvraaRKIgM4A7KGzj_iJ4",
+    authDomain: "msn-clone.firebaseapp.com",
+    databaseURL: "https://msn-clone.firebaseio.com",
+    projectId: "msn-clone",
+    storageBucket: "",
+    messagingSenderId: "409074510752",
+    appId: "1:409074510752:web:e8fe4ba07da92141"
+  }
+  // Initialize Firebase
+  // firebase.initializeApp(firebaseConfig);
 };
 
 /*
